@@ -67,7 +67,12 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y qemu-system-x86 gcc gdb make git bochs-x
+    apt-get install -y qemu-system-x86 gcc gdb make git g++
+    sudo apt-get install -y libx11-dev xserver-xorg-dev xorg-dev ncurses-dev
+    wget https://sourceforge.net/projects/bochs/files/bochs/2.6.2/bochs-2.6.2.tar.gz/download -O /home/vagrant/bochs-2.6.2.tar.gz
+
+    SRCDIR=/home/vagrant PINTOSDIR=/home/vagrant/pintos/src DSTDIR=/usr/local /home/vagrant/pintos/src/misc/bochs-2.6.2-build.sh
+    
     echo 'export PATH="/home/vagrant/pintos/src/utils/":$PATH' >> /home/vagrant/.bashrc
   SHELL
 end
