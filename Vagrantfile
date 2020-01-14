@@ -72,6 +72,9 @@ Vagrant.configure("2") do |config|
     wget https://sourceforge.net/projects/bochs/files/bochs/2.6.2/bochs-2.6.2.tar.gz/download -O /home/vagrant/bochs-2.6.2.tar.gz
 
     SRCDIR=/home/vagrant PINTOSDIR=/home/vagrant/pintos/src DSTDIR=/usr/local /home/vagrant/pintos/src/misc/bochs-2.6.2-build.sh
+
+    cd /home/vagrant/pintos/src/utils
+    make
     
     echo 'export PATH="/home/vagrant/pintos/src/utils/":$PATH' >> /home/vagrant/.bashrc
   SHELL
