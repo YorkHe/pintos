@@ -4,6 +4,10 @@
 
 1. Download and install VirtualBox from its [website](https://www.virtualbox.org/wiki/Downloads)
 
+As we found from (https://github.com/hashicorp/vagrant/issues/11249), Vagrant seems to be not supporting VirtualBox with version number larger than 6.1.
+
+Please download version 6.0 or use the workarounds mentioned in this [issue](https://github.com/oracle/vagrant-boxes/issues/178#issue-536720633)
+
 2. Download and install vagrant from its [website](https://www.vagrantup.com/downloads.html).
 
 You can also use whatever package management tool you like for the two softwares above.
