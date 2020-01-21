@@ -44,7 +44,7 @@ Windows users, please change the EOL sequence of file `pintos\src\misc\bochs-2.6
 
 For having a better start of the first project, please read the following files. 
 
-1. All the data structures under `lib/kernel`. The `list`, `bitmap` and `hash`. They will be your best friend throughout this semester.
-2. `threads/thread.h`, for a good understanding of what is stored in each thread and how the scheduler works. 
+1. All the data structures under `lib/kernel` -- the `list`, `bitmap` and `hash`. They will be your best friends throughout this semester.
+2. `threads/thread.h`, for a good understanding of what are stored in each thread and how the scheduler works. 
 3. `threads/switch.S`. Try to understand how context switch happens in Pintos. 
 4. `threads/synch.h` and `threads/synch.c`. What are the synchronization methods used in Pintos, and what are the differences?
